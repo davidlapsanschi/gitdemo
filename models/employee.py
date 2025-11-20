@@ -29,10 +29,6 @@ class Employee:
     def to_dict(self) -> dict:
         """Convert employee to dictionary for JSON serialization."""
 
-
-
-
-
         return {
             'id': self.id,
             'name': self.name,
@@ -54,11 +50,6 @@ class Employee:
         print(f"Hire Date  : {self.hire_date}")
         print(f"Current Project: {self.current_project or 'Unassigned'}")
         print("===================================")
-
-
-
-
-
     
     @classmethod
     def from_dict(cls, data: dict) -> 'Employee':
